@@ -19,8 +19,8 @@
 # Default server configuration
 #
 server {
-        listen 80 default_server;
-        listen [::]:80 default_server;
+        listen 8081 default_server;
+        listen [::]:8081 default_server;
 
         # SSL configuration
         #
@@ -38,7 +38,7 @@ server {
         #
         # include snippets/snakeoil.conf;
 
-        root /var/www/html/sdc-linux-project-pesbuk;
+        root /usr/share/nginx/html;
 
         # Add index.php to the list if you are using PHP
         index index.php index.html index.htm index.nginx-debian.html;
