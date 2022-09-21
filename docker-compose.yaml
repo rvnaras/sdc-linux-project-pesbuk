@@ -2,11 +2,11 @@ version: "3.9"
 services:
   web:
     container_name: web
-    image: ravennaras/sdc:pesbuk.v2:${GIT_COMMIT_SHORT}
+    image: ravennaras/sdc:sosmed-web
     ports:
       - "80:80"
     depends_on:
       - db
   db:
     container_name: db
-    image: ravennaras/sdc:mysqlpesbuk.v2:${GIT_COMMIT_SHORT}
+    image: ravennaras/sdc:sosmed-db
